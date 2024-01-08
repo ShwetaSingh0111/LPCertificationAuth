@@ -84,17 +84,15 @@
     lpTag.identities.push(identityFn);
     function identityFn(callback) {
       callback({
-        "sub": "+972-3-5555-555",
-        "iss": "https://jwt.io/",
-        "aud": "acc:qa57221676",
-        "exp": 1992025992,
-        "iat": 1682030954,
-        "acr": "loa1"
-      });
+  "sub": "825513",
+  "name": "Shweta Singh",
+  "admin": true,
+  "iat": 1516239022
+});
     }
 
-    var id_token = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJPd2VzaCBLaGFuIC0gODI2MTc4IiwiaXNzIjoiaHR0cHM6Ly9qd3QuaW8vIiwiYXVkIjoiYWNjOnFhNTcyMjE2NzYiLCJleHAiOjE5OTIwMjU5OTIsImlhdCI6MTY4MjAzMDk1NCwiYWNyIjoibG9hMSJ9.nRYQm4_oieyWactcppab6WaIubpXrjjugrc-mxlS7ClVIdYm9UFzYh03D9dGf2FuWySH9ase0tN9cNct9BwEj8tnvHE-IDpEajgeOUc-IfLuvvDBUgUSbYnkuR-LEDxUhV4-d50bRDezzEcmJ_HbcVrdzFqgvrhXW-eQIVELbsWJmIo_JRLDxcx9UTSbddojFiC25BKyyxkOZtxUJ7hk2GQWRfXPhRN_5kKrrQikfz_vP1U7k4cgBpBgphJMvdVk-d_tUt7YbNe2-Nt-jJ6DRbhKNgUA834U4dubNZGNgoOgKfXjbpDn83Y-LXVrC93Zui1BE_KZr9Co0ShGaumeSA"
-
+    var id_token = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4MjU1MTMiLCJuYW1lIjoiU2h3ZXRhIFNpbmdoIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMn0.pqSq4_YnX6UuVnfX6ebq_lW05an24Zf4nZzylRzxfmkWr7WorLCWMoDyZDxAutJAewG50xkITTSPwnytrE3F_lDP86PJyklkp4o87Or52BLhyUoSvbstWKYE6yo1FCBxxnDr1uVeNhrSzGVlUBqy-GgcC7HSApIXFFB95lQpnB4mpfmuYVkEuLF9uHVihI74vZFQMJPEybMKiQIKjD-YWLTeTXDHzC3dheIw2WKMjBp4dqiKTS1H2dTAQP0f67YnHiBGJQv17iZ9OhRGjYfdJwtR3isN8F2CwmUzT-H66wNNsk3TdOAkhcfxfQp6_CqN5bHduWUvVFz5CxF7jL5lng";
+    
     function lpGetAuthenticationToken(callback) {
       console.log("LP asked for id_token or auth code in Code Flow");
       // Do your magic…
