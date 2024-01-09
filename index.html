@@ -84,14 +84,15 @@
     lpTag.identities.push(identityFn);
     function identityFn(callback) {
       callback({
-     "sub": "825513",
-        "name": "Shweta Singh",
-      "admin": true,
-      "iat": 1516239022
+     "iss":"https://shwetasingh0111.github.io/LPCertificationAuth/",
+  "sub": "825513",
+  "name": "Shweta Singh",
+  "admin": true,
+  "iat": 1516239022
 });
     }
 
-    var id_token ="eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4MjU1MTMiLCJuYW1lIjoiU2h3ZXRhIFNpbmdoIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMn0.pqSq4_YnX6UuVnfX6ebq_lW05an24Zf4nZzylRzxfmkWr7WorLCWMoDyZDxAutJAewG50xkITTSPwnytrE3F_lDP86PJyklkp4o87Or52BLhyUoSvbstWKYE6yo1FCBxxnDr1uVeNhrSzGVlUBqy-GgcC7HSApIXFFB95lQpnB4mpfmuYVkEuLF9uHVihI74vZFQMJPEybMKiQIKjD-YWLTeTXDHzC3dheIw2WKMjBp4dqiKTS1H2dTAQP0f67YnHiBGJQv17iZ9OhRGjYfdJwtR3isN8F2CwmUzT-H66wNNsk3TdOAkhcfxfQp6_CqN5bHduWUvVFz5CxF7jL5lng";
+    var id_token ="eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3Nod2V0YXNpbmdoMDExMS5naXRodWIuaW8vTFBDZXJ0aWZpY2F0aW9uQXV0aC8iLCJzdWIiOiI4MjU1MTMiLCJuYW1lIjoiU2h3ZXRhIFNpbmdoIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMn0.saoZ6YTRUA1smhOFS6BUsMZEPIu_G8pcPcxMQ3Rl14wyQI5ZpAA2052eoSL_nGExNiBsTt24dJDzB5o3vs6CzUW9ZrwE346FYRsaIhyR4LETpQg9MXNk2VoVSnzRMAmzLDIA_2WGh0LmHiQgI0H-kmFcoRxprwIvrpj5RzC-xI5Md-V6lJ7tTNhvtgk3nLltJeYoYJPhuexUdDX5WPtNnug0gODsynQeUBPulw-0kKFLwvn6Vm0SO58yJ__YFnA3HgTPGHEG0fC1KVPz8IBCfW93N6dnipA9bT02SDcLU7EIV_2DTZShUiWJBLUZ4UVErbziQKQKVU5IIVMQjC71iw";
     
     function lpGetAuthenticationToken(callback) {
       console.log("LP asked for id_token or auth code in Code Flow");
