@@ -85,14 +85,14 @@
     function identityFn(callback) {
       callback({
       "sub": "825513",
-      "iss": "https://jwt.io/",
+      "iss": "https://jwt.io",
       "name": "Shweta Singh",
       "admin": true,
       "iat": 1516239022
 });
     }
 
-    var id_token = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4MjU1MTMiLCJpc3MiOiJodHRwczovL2p3dC5pby8iLCJuYW1lIjoiU2h3ZXRhIFNpbmdoIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMn0.FEJqfOWgToYq4UM9JGjnQG91ohxmF2qrc-NLw-L4NC4GbwN40gLFSZhZutRmpsZJBsy6KeXMhFhylWxl221J3GD0I7hMjBaGVjAeu76h4GYmt6s66VXJGlseah6dyeAGhPkbgP2VmD5xHyceRrp6u3B5hF-LAiyj2A3IyKV2X2qIVJc-qUjvpauroaVs6jVjd6hyDU3K7yw9aVDiUW8UF_Tk5x30svHkidW_uxK-O8gjmE7zEgrg5fjyJBL8BRNAa9dWObBZx8pS1NnRK0MMoHUaKP9kOynq2paUu-8CDIqB_YGGc9eaC_nhxzMGSeUjGQ8jyu43qyTEQ6BoybySCQ";
+    var id_token ="eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4MjU1MTMiLCJpc3MiOiJodHRwczovL2p3dC5pbyIsIm5hbWUiOiJTaHdldGEgU2luZ2giLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNTE2MjM5MDIyfQ.boah-97AacO-44vv-fcs0NSPioIm4Onx4SDeSJADT1gJNEcnI-moatMoP4Vaqn6z9HLH8gIrxQ8F0M-wtJL1X1u5Qyj755bTd8sAS8LIKPvfGvqmGcS4C4DPgJCADpsICj0ozeEahP7atFqPiAJDPKzUMmDa6pGWufXzZflDkX8692NoJFS9_75VWOXweNSWPgjwJJxpD7ZS4UlDdHEbpJlsq-1Mv33uzMAF3nYxq5on6C884Aalt6cwXFYJAkK2poz-lYJhYEinDUFqr5Ww2_p_iJojt-1nc0-yErBqmu2qXFuyzNbXuddhK8OqvljTCzVr1TmQ4AjwsVNZqg-PLA";
     
     function lpGetAuthenticationToken(callback) {
       console.log("LP asked for id_token or auth code in Code Flow");
