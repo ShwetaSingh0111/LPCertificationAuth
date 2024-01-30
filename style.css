@@ -88,13 +88,16 @@ header {
 
 .product-box {
   position: relative;
+  width: 400px;
+  margin-top: 20px;
 }
 
 
 
 .product-img {
-  width: 100%;
-  height: auto;
+  /*width: 100%;*/
+  width: 200px;
+  height: 300px;
   margin: bottom 0.5rem;
 
 }
@@ -168,10 +171,10 @@ header {
 }
 
 .LogoutButton {
-  background-color: rgb(210, 76, 76);
-  border-radius: 50%;
-  border: 1px solid black;
-  color: rgb(0, 0, 0);
+  background-color: #1a73e8;
+  border-radius: 5%;
+  border: 1px solid #1a73e8;
+  color: white;
   padding: 8px 17px;
   text-align: center;
   display: inline-block;
